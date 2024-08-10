@@ -24,11 +24,11 @@ const Navbar = () => {
                 </Link>
                 <ul className='flex justify-between items-center py-2 lg:px-14 md:px-12 sm:px-5 px-2 gap-8'>
                     <li><Link href={'/'}>How to Start</Link></li>
-                    <li><Link href={'/'}>Service</Link></li>
-                    <li><Link href={'/'}>Technologies </Link></li>
-                    <li><Link href={'/blogs'}>Careers</Link></li>
-                    <li><button className={' border-2 border-orange-400 text-orange-400 text-sm rounded-md p-2'}>BUILD A TEAM</button></li>
-                    <li><Link href={'/contact-us'}>Meet Our Team</Link></li>
+                    <li><Link href={'/our-services'}>Service</Link></li>
+                    <li><Link href={'/technologies'}>Technologies </Link></li>
+                    <li><Link href={'/careers'}>Careers</Link></li>
+                    <li><button onClick={() => {}} className={' border-2 border-orange-400 text-orange-400 text-sm rounded-md p-2'}>BUILD A TEAM</button></li>
+                    <li><Link href={'/'}>Meet Our Team</Link></li>
                 </ul>
 
             </nav>

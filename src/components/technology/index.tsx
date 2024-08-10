@@ -2,14 +2,15 @@ import {stakeDropxsData} from "@/utils";
 import WhatWeDoCard from "@/components/what-we-do-card";
 import React from "react";
 import SpecializedCard from "@/components/specialized-card";
+import TechCarousel from "@/components/tech-carousel";
 
 const Technology = () => {
     return (
         <div className={'w-full h-full  '}>
-            <h3 className={'font-bold  md:text-5xl text-center pt-60'}>
+            <h3 className={'font-bold  md:text-5xl text-center pt-20 pb-5'}>
                 Technologies
             </h3>
-
+            <TechCarousel />
         </div>
     )
 }

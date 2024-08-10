@@ -43,3 +43,10 @@
   object-fit: cover;
   background-repeat: no-repeat;
 }
+.customBg {
+  background-image: url('/images/bgImage.png');
+  background-size: 100%;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}

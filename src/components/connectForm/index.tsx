@@ -4,6 +4,8 @@ import * as yup from 'yup';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import {MenuItem, Select} from "@mui/material";
+import Checkbox from '@mui/material/Checkbox';
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
 interface MyValues {
@@ -255,6 +257,10 @@ const ConnectForm = () => {
 
                 </div>
 
+                <div>
+                    <Checkbox {...label} defaultChecked /><span>By sending this form I confirm that I have read and accept the Privacy Policy</span>
+                </div>
+
                 <div className={'pt-4'}>
                     <button
                         type={'submit'}
@@ -263,11 +269,7 @@ const ConnectForm = () => {
                     >
                         <p className={'text-white font-normal'}>Get Consulation</p>
                     </button>
-                    {/*<ButtonFillEffect className={'font-inter button button--stroke w-full'}*/}
-                    {/*                  type="submit"*/}
-                    {/*>*/}
-                    {/*    {loading ? 'Submitting...' : 'Send Request'}*/}
-                    {/*</ButtonFillEffect>*/}
+
 
                 </div>
 

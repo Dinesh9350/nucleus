@@ -10,7 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 const Index = () => {
     return (
         <footer className='w-full bg-white text-black'>
-            <div className={'py-10'}>
+            <div className={'pt-10'}>
                 <div className='px-5 md:px-36 py-5 flex flex-col md:flex-row justify-between items-start w-full gap-4'>
                     <div className={'w-full md:w-1/4 flex flex-col gap-4'}>
                         <Link href={'/'}>
