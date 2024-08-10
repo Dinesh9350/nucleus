@@ -1,9 +1,15 @@
-import {hireData, stakeDropxsData} from "@/utils";
+import {hireData} from "@/utils";
 import WhatWeDoCard from "@/components/what-we-do-card";
 import React from "react";
 import HireCard from "@/components/hire-card";
 
-const HireSection = ({heading, description}) => {
+
+interface HireSectionProps {
+    heading: string;
+    description: string;
+}
+
+const HireSection: React.FC<HireSectionProps>  = ({heading, description}) => {
     return (
         <div className={'w-full h-full flex flex-col justify-center items-center  '}>
             <h3 className={'font-bold text-5xl md:text-5xl text-center pt-20 w-[50rem]'}>

@@ -1,4 +1,4 @@
-import {specializeData, stakeDropxsData} from "@/utils";
+import {specializeData} from "@/utils";
 import WhatWeDoCard from "@/components/what-we-do-card";
 import React from "react";
 import SpecializedCard from "@/components/specialized-card";

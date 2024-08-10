@@ -1,15 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import WhatWeDoCard from "@/components/what-we-do-card";
-import {stakeDropxsData} from "@/utils";
-import ProcessCard from "@/components/process-card";
-import ContactUsSection from "@/components/contact-us-section";
-import FeaturesCard from "../what-we-do-section";
-import SpecializedSection from "@/components/specialized-section";
-import Technology from "@/components/technology";
-import Clients from "@/components/clients";
-import Connect from "@/components/connect";
+
 
 const HomeSection = () => {
     return (

@@ -4,7 +4,7 @@ import ConnectForm from "@/components/connectForm";
 
 const Connect = () => {
     return (
-        <div className="bg-gray-100 h-full overflow-hidden px-5 md:px-36 pt-36 pb-40">
+        <div className="bg-gray-100 h-full overflow-hidden px-5 md:px-36 pt-20 pb-40">
             <div className={'relative flex flex-col md:flex-row justify-start items-center w-full h-full'}>
 
                 <div className={' w-[100%]'}>

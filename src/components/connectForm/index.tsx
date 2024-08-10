@@ -67,7 +67,7 @@ const ConnectForm = () => {
         },
     });
 
-    const handleSubmitContactUS = async (params) => {
+    const handleSubmitContactUS = async (params: any) => {
         // try {
         //     // Dispatch the thunk action and unwrap the result
         //     const result = await dispatch(contactUs(params));

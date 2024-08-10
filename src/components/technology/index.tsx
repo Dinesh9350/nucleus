@@ -1,7 +1,4 @@
-import {stakeDropxsData} from "@/utils";
-import WhatWeDoCard from "@/components/what-we-do-card";
 import React from "react";
-import SpecializedCard from "@/components/specialized-card";
 import TechCarousel from "@/components/tech-carousel";
 
 const Technology = () => {

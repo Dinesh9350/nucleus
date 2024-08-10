@@ -72,12 +72,12 @@ const ClientCarousel = () => {
         slidesToScroll: 1,
         centerMode: true, // Center the current slide
         centerPadding: '0', // Remove padding around the center slide
-        beforeChange: (current, next) => {
+        beforeChange: (current: number, next: number) => {
             document.querySelectorAll('.slick-slide').forEach((slide) => {
                 slide.classList.remove('fade');
             });
         },
-        afterChange: (index) => {
+        afterChange: (index: number) => {
             document.querySelectorAll('.slick-slide').forEach((slide) => {
                 if (slide.classList.contains('slick-center')) {
                     slide.classList.add('highlight');

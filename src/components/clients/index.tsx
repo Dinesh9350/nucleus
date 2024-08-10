@@ -1,7 +1,5 @@
-import {stakeDropxsData} from "@/utils";
-import WhatWeDoCard from "@/components/what-we-do-card";
+
 import React from "react";
-import SpecializedCard from "@/components/specialized-card";
 import ClientCarousel from "@/components/client-carousel";
 
 const Clients = () => {
