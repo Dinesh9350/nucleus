@@ -3,7 +3,7 @@ import React from "react";
 
 const  EasyProcess = () => {
     return (
-        <div className={'w-full h-full bg-[#44CEF6] px-5 md:px-36 '}>
+        <div className={'w-full h-full bg-[#44CEF6] px-5 md:px-10 xl:px-36 '}>
             <div className={'pt-20 flex flex-col justify-center items-center text-center gap-4'}>
                 <p className={'text-white font-bold text-xl '}>How to Start</p>
                 <h3 className={'font-bold text-5xl md:text-5xl'}>
@@ -13,11 +13,11 @@ const  EasyProcess = () => {
                     testers,
                     and leaders.</p>
             </div>
-            <div className={'flex justify-center items-center gap-24 pt-10 pb-20'}>
-                <Image src={'/images/process/process1.png'} alt={"process"} height={200} width={200}/>
-                <Image src={'/images/process/process2.png'} alt={"process"} height={200} width={200}/>
-                <Image src={'/images/process/process3.png'} alt={"process"} height={200} width={200}/>
-                <Image src={'/images/process/process4.png'} alt={"process"} height={200} width={200}/>
+            <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-24 pt-10 pb-20'}>
+                <Image className={'m-auto'} src={'/images/process/process1.png'} alt={"process"} height={200} width={200}/>
+                <Image className={'m-auto'}  src={'/images/process/process2.png'} alt={"process"} height={200} width={200}/>
+                <Image className={'m-auto'}  src={'/images/process/process3.png'} alt={"process"} height={200} width={200}/>
+                <Image className={'m-auto'}  src={'/images/process/process4.png'} alt={"process"} height={200} width={200}/>
             </div>
         </div>
     )

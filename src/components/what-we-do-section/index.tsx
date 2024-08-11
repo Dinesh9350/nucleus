@@ -13,7 +13,7 @@ const WhatWeDoSection: React.FC<WhatWeDoSectionProps>  = ({heading}) => {
                 {heading}
             </h3>
             <div className={'flex justify-center relative'}>
-                <div className={'grid sm:grid-cols-3 gap-8 px-5 md:px-36 py-12 md:py-16 z-10'}>
+                <div className={'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 px-5 md:px-36 py-12 md:py-16 z-10'}>
                     {whatWeDoData?.map((item, index) => (
                         <WhatWeDoCard key={index} data={item}/>
                     ))}

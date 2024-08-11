@@ -92,7 +92,7 @@ const ConnectForm = () => {
 
     return (
         <div>
-            <h3 className={'font-bold text-orange-400 text-4xl md:text-4xl py-5'}>
+            <h3 className={'font-bold text-orange-400 text-3xl md:text-4xl py-5 h-full'}>
                 Connect With Your Next Great Hire Today!
             </h3>
             <form className={'contactForm w-full'} onSubmit={formik.handleSubmit} style={{
@@ -100,10 +100,10 @@ const ConnectForm = () => {
                 // alignItems: 'center',
                 flexDirection: 'column'
             }}>
-                <div className={'flex flex-col justify-start items-start gap-4 w-full'}>
-                    <div className={'w-full flex justify-start items-center gap-4'}>
+                <div className={'flex flex-col justify-start items-start gap-4 w-full h-full'}>
+                    <div className={'w-full flex flex-col md:flex-row justify-start items-center gap-4'}>
 
-                        <div className={'w-1/2 flex justify-center items-start flex-col  col-span-2 gap-2'}>
+                        <div className={ 'w-full md:w-1/2 flex justify-center items-start flex-col  col-span-2 gap-2'}>
 
                             <p className={'font-bold'}>Company</p>
                             <input
@@ -126,7 +126,7 @@ const ConnectForm = () => {
                         </div>
 
                         <div
-                            className={'w-1/2 flex justify-center items-start flex-col col-span-2 md:col-span-2 gap-2'}>
+                            className={'w-full md:w-1/2 flex justify-center items-start flex-col col-span-2 md:col-span-2 gap-2'}>
                             <p className={'font-bold'}>Your Name</p>
                             <input
                                 id="name"
@@ -153,10 +153,10 @@ const ConnectForm = () => {
                     </div>
 
 
-                    <div className={'w-full flex justify-start items-center gap-4'}>
+                    <div className={'w-full flex flex-col md:flex-row justify-start items-center gap-4'}>
 
 
-                        <div className={'flex justify-center items-start flex-col w-full col-span-2'}>
+                        <div className={'w-full md:w-1/2 flex justify-center items-start flex-col col-span-2 md:col-span-2 gap-0'}>
                             <p className={'font-bold'}>Phone Number</p>
                             <PhoneInput
                                 placeholder={"+81 0000 000 000"}
@@ -201,8 +201,8 @@ const ConnectForm = () => {
                         </div>
 
                         <div
-                            className={'flex justify-center items-start flex-col w-full col-span-2 md:col-span-2 gap-2'}>
-                            <p className={'font-bold'}>Email</p>
+                            className={'w-full md:w-1/2 flex justify-center items-start flex-col col-span-2 md:col-span-2 gap-2'}>
+                            <p className={'font-bold '}>Email</p>
                             <input
                                 id="email"
                                 name="email"

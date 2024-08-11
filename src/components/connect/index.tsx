@@ -4,16 +4,16 @@ import ConnectForm from "@/components/connectForm";
 
 const Connect = () => {
     return (
-        <div className="bg-gray-100 h-full overflow-hidden px-5 md:px-36 pt-20 pb-40">
+        <div className="bg-gray-100 h-full overflow-hidden px-5 md:px-10 xl:px-36 pt-20 pb-40">
             <div className={'relative flex flex-col md:flex-row justify-start items-center w-full h-full'}>
 
                 <div className={' w-[100%]'}>
-                    <Image className={'my-auto float-left '} width={750}
+                    <Image className={'hidden sm:block my-auto float-left '} width={750}
                            height={200} src={'/images/connect.png'}
                            alt={'home image'}/>
                 </div>
                 <div
-                    className={'absolute flex flex-col gap-4 p-8 bg-white w-[40rem] right-0 self-center rounded-xl borderTopLeft z-10'}>
+                    className={'md:absolute flex flex-col gap-4 p-8 bg-white w-full md:w-[40rem] right-0 self-center rounded-xl borderTopLeft z-10'}>
                     <ConnectForm />
                 </div>
             </div>

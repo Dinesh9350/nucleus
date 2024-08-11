@@ -19,7 +19,7 @@ export default function Home() {
             <BgImageSection heading={'Our Services'} description={'We specialize in helping you build a team of expert developers.'}/>
             <TextContainer heading={'Hire Permanent and Remote Developers'} description={'From full-time remote engineering teams to hourly contractors, work with remote devs as needed'} />
             <div>
-                <div className={'grid sm:grid-cols-2 gap-4 px-5 md:px-36 py-12 md:py-16 z-10'}>
+                <div className={'grid md:grid-cols-2 gap-4 px-5 md:px-10 xl:px-36  py-12 md:py-16 z-10'}>
                     {servicesData?.map((item, index) => (
                         <OurServicesCard key={index} data={item}/>
                     ))}

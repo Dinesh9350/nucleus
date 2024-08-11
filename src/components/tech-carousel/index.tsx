@@ -23,6 +23,26 @@ const TechCarousel = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1440, // Tailwind 'lg' breakpoint
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 960, // Tailwind 'md' breakpoint
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 576, // Tailwind 'sm' breakpoint
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
 
     return (

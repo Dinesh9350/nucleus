@@ -23,7 +23,7 @@ export default function Home() {
                            description={'From full-time remote engineering teams to hourly contractors, work with remote devs as needed'}/>
             <StartBgSection />
             <div>
-                <div className={'grid sm:grid-cols-3 gap-4 px-5 md:px-36 py-12 md:py-16 z-10'}>
+                <div className={'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 px-5 md:px-10 xl:px-36  py-12 md:py-16 z-10'}>
                     {startData?.map((item, index) => (
                         <HowToStartCard key={index} data={item}/>
                     ))}

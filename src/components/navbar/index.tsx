@@ -4,39 +4,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-    Button,
     Dialog,
-    DialogActions,
     DialogContent,
-    DialogTitle,
-    ToggleButton,
-    ToggleButtonGroup
+    IconButton,
 } from "@mui/material";
 
 const Navbar = () => {
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const [view, setView] = useState('view1');
-
-    // Corrected handleViewChange function
-    const handleViewChange = (
-        event: React.MouseEvent<HTMLElement>,
-        newView: string
-    ) => {
-        // Only update state if newView is not null or undefined
-        if (newView !== null && newView !== undefined) {
-            setView(newView);
-        }
-    };
 
     useEffect(() => {
         console.log("path--", pathname);
     }, [pathname]);
 
+    // Function to handle closing dialog after clicking a link
+    const handleClose = () => {
+        setIsOpen(false);
+    };
+
     return (
-        <header className='w-full navbar fixed h-24 z-50'>
-            <nav className='flex justify-between items-center py-2 px-5 md:px-36'>
-                <Link href={'/'} className={'hidden md:block'}>
+        <header className='w-full fixed top-0 h-24 z-50 bg-white shadow-md'>
+            <nav className='flex justify-between items-center py-2 px-5 lg:px-36'>
+                <Link href={'/'}>
                     <Image
                         className='object-contain'
                         src={'/images/logo.png'}
@@ -45,7 +34,12 @@ const Navbar = () => {
                         alt={'navbar logo'}
                     />
                 </Link>
-                <ul className='flex justify-between items-center py-2 lg:px-14 md:px-12 sm:px-5 px-2 gap-8'>
+                <div className='lg:hidden flex items-center'>
+                    <button onClick={() => setIsOpen(!isOpen)} className='text-orange-400 text-xl'>
+                        ☰
+                    </button>
+                </div>
+                <ul className='hidden lg:flex justify-between items-center py-2 lg:px-14 sm:px-12 px-5 gap-8'>
                     <li>
                         <Link href={'/how-to-start'}>
                             <p className={pathname === '/how-to-start' ? 'text-orange-400' : ''}>
@@ -75,7 +69,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <button onClick={() => setIsOpen(true)} className={'border-2 border-orange-400 text-orange-400 text-sm rounded-md p-2'}>
+                        <button onClick={() => setIsOpen(!isOpen)} className='border-2 border-orange-400 text-orange-400 text-sm rounded-md p-2'>
                             BUILD A TEAM
                         </button>
                     </li>
@@ -88,47 +82,61 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
-            <Dialog open={isOpen} maxWidth="md" onClose={() => setIsOpen(false)}>
-                <DialogContent>
-                    <div className={'p-4'}>
-                        <p className={'font-bold text-4xl'}>Build a Team</p>
-                        <p className={'py-2'}>We specialize in helping you build a team.</p>
-                        <div>
-                            <ToggleButtonGroup
-                                value={view}
-                                exclusive
-                                onChange={handleViewChange}
-                                aria-label="View toggle"
-                            >
-                                <ToggleButton className={'py-2'} value="view1" aria-label="View 1">
-                                    <p className={'px-8'}> Option 1</p>
-                                </ToggleButton>
-                                <ToggleButton value="view2" aria-label="View 2">
-                                    <p className={'px-8'}> Option 2</p>
-                                </ToggleButton>
-                            </ToggleButtonGroup>
 
-                            {view === 'view1' ? (
-                                <div>
-                                    {/* Content for View 1 */}
-                                    <h1>View 1 Content</h1>
-                                    <p>This is the first view.</p>
-                                </div>
-                            ) : (
-                                <div>
-                                    {/* Content for View 2 */}
-                                    <h1>View 2 Content</h1>
-                                    <p>This is the second view.</p>
-                                </div>
-                            )}
-                        </div>
-                    </div>
+            <Dialog open={isOpen} onClose={handleClose} fullScreen={true}>
+                <DialogContent className="flex flex-col h-full bg-white">
+                    <IconButton
+                        edge="start"
+                        color="inherit"
+                        onClick={handleClose}
+                        aria-label="menu"
+                        className="self-end text-orange-400 text-xl"
+                    >
+                        ☰
+                    </IconButton>
+                    <ul className='flex flex-col h-full justify-center'>
+                        <li className='py-4 text-center'>
+                            <Link href={'/how-to-start'} onClick={handleClose}>
+                                <p className={pathname === '/how-to-start' ? 'text-orange-400' : ''}>
+                                    How to Start
+                                </p>
+                            </Link>
+                        </li>
+                        <li className='py-4 text-center'>
+                            <Link href={'/our-services'} onClick={handleClose}>
+                                <p className={pathname === '/our-services' ? 'text-orange-400' : ''}>
+                                    Service
+                                </p>
+                            </Link>
+                        </li>
+                        <li className='py-4 text-center'>
+                            <Link href={'/technologies'} onClick={handleClose}>
+                                <p className={pathname === '/technologies' ? 'text-orange-400' : ''}>
+                                    Technologies
+                                </p>
+                            </Link>
+                        </li>
+                        <li className='py-4 text-center'>
+                            <Link href={'/careers'} onClick={handleClose}>
+                                <p className={pathname === '/careers' ? 'text-orange-400' : ''}>
+                                    Careers
+                                </p>
+                            </Link>
+                        </li>
+                        <li className='py-4 text-center'>
+                            <button onClick={handleClose} className='border-2 border-orange-400 text-orange-400 text-sm rounded-md p-2'>
+                                BUILD A TEAM
+                            </button>
+                        </li>
+                        <li className='py-4 text-center'>
+                            <Link href={'/'} onClick={handleClose}>
+                                <p className={pathname === '/' ? 'text-orange-400' : ''}>
+                                    Meet Our Team
+                                </p>
+                            </Link>
+                        </li>
+                    </ul>
                 </DialogContent>
-                <DialogActions>
-                    <Button onClick={() => setIsOpen(false)} color="primary">
-                        Close
-                    </Button>
-                </DialogActions>
             </Dialog>
         </header>
     );

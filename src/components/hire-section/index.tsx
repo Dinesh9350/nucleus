@@ -12,10 +12,10 @@ interface HireSectionProps {
 const HireSection: React.FC<HireSectionProps>  = ({heading, description}) => {
     return (
         <div className={'w-full h-full flex flex-col justify-center items-center  '}>
-            <h3 className={'font-bold text-5xl md:text-5xl text-center pt-20 w-[50rem]'}>
+            <h3 className={'font-bold text-2xl md:text-5xl text-center pt-20 w-[25rem] md:w-[50rem]'}>
                 {heading}
             </h3>
-            <p className={'text-center py-2'}>
+            <p className={'text-center py-2 px-2'}>
                 {description}
             </p>
             <div className={'flex justify-center relative'}>
