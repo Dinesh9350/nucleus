@@ -3,9 +3,9 @@ import React from 'react';
 const DeveloperSection: React.FC = () => {
     return (
         <div className="bg-white p-8 rounded-md w-full mx-auto">
-            <div className="grid grid-cols-9 gap-8">
+            <div className="grid lg:grid-cols-9 gap-8">
                 {/* Role Section */}
-                <div className={'col-span-4'}>
+                <div className={'lg:col-span-4'}>
                     <h4 className="text-gray-600 font-bold mb-2">ROLE</h4>
                     <h2 className="text-2xl font-bold mb-4">Senior Web Full Stack Developer</h2>
                     <p className="text-gray-600 mb-4">
@@ -23,7 +23,7 @@ const DeveloperSection: React.FC = () => {
                 </div>
 
                 {/* Skills Section */}
-                <div className="col-span-3">
+                <div className="lg:col-span-3">
                     <h4 className="text-gray-600 font-bold mb-2">SKILLS</h4>
                     <div className="flex flex-wrap gap-2">
                         {['Node.js', 'React js', 'Vue js', 'Typescript', 'Javascript', 'Next JS', 'Amplify', 'AWS', 'Terraform', 'C# and .NET', 'GraphQL', 'Serverless Framework'].map(skill => (
@@ -36,7 +36,7 @@ const DeveloperSection: React.FC = () => {
                 </div>
 
                 {/* Location Section */}
-                <div className="col-span-2">
+                <div className="lg:col-span-2">
                     <h4 className="text-gray-600 font-bold mb-2">LOCATION</h4>
                     <div className={'h-[1px] bg-gray'} ></div>
                     <ul className="list-none">

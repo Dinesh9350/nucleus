@@ -11,7 +11,7 @@ const TextContainer: React.FC<TextContainerProps> = ({ heading, description }) =
             <h3 className="font-bold text-3xl md:text-5xl w-full lg:w-[50rem]">
                 {heading}
             </h3>
-            <p className={'py-4  w-[25rem]'}>{description}</p>
+            <p className={'py-4 w-full  md:w-[25rem]'}>{description}</p>
         </div>
     );
 };

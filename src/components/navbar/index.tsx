@@ -85,7 +85,7 @@ const Navbar = () => {
             </nav>
 
             <Dialog open={isOpen} onClose={handleClose} fullScreen={true}>
-                <DialogContent className="flex flex-col h-full bg-white">
+                <DialogContent className="flex flex-col w-full  h-full bg-white">
                     <IconButton
                         edge="start"
                         color="inherit"

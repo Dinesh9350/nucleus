@@ -15,7 +15,7 @@ import StartBgSection from "@/components/start-bg-section";
 export default function Home() {
 
     return (
-        <div className={'h-full w-full bg-gray-100 pt-24'}>
+        <div className={'h-full w-full bg-gray-100 pt-24 overflow-hidden'}>
 
             <BgImageSection heading={'How to Start'}
                             description={'We specialize in helping you build a team of expert developers.'}/>

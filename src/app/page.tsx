@@ -17,7 +17,7 @@ import EasyProcess from "@/components/easy-process";
 export default function Home() {
 
   return (
-      <div className={'h-full w-full bg-gray-100'}>
+      <div className={'h-full w-full bg-gray-100 overflow-hidden'}>
           <div className={'relative'}>
               <HomeSection />
               <Trust />
