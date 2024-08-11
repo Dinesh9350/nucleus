@@ -13,7 +13,7 @@ const  EasyProcess = () => {
                     testers,
                     and leaders.</p>
             </div>
-            <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-4 md:gap-24 pt-10 pb-20'}>
+            <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-16 md:gap-24 pt-10 pb-20'}>
                 <Image className={'m-auto'} src={'/images/process/process1.png'} alt={"process"} height={200} width={200}/>
                 <Image className={'m-auto'}  src={'/images/process/process2.png'} alt={"process"} height={200} width={200}/>
                 <Image className={'m-auto'}  src={'/images/process/process3.png'} alt={"process"} height={200} width={200}/>

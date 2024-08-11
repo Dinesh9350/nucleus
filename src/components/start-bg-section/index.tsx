@@ -3,7 +3,7 @@ import React from "react";
 const StartBgSection = () => {
     return (
         <div className={'px-5 md:px-10 xl:px-36 md:pt-20'}>
-            <div className={'relative customBg w-full h-full py-32  rounded-tr-xl rounded-bl-3xl'}>
+            <div className={'relative customBg w-full h-full py-24 md:py-32  rounded-tr-xl rounded-bl-3xl'}>
                 <div className={'flex flex-col justify-center items-center gap-16 z-10'}>
 
                     <div
