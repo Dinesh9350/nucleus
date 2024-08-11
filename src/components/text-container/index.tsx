@@ -7,7 +7,7 @@ interface TextContainerProps {
 
 const TextContainer: React.FC<TextContainerProps> = ({ heading, description }) => {
     return (
-        <div className={'flex flex-col pt-20 px-5 md:px-10 xl:px-36 h-full w-full'}>
+        <div className={'flex flex-col py-10 px-5 md:px-10 xl:px-36 h-full w-full'}>
             <h3 className="font-bold text-3xl md:text-5xl w-full lg:w-[50rem]">
                 {heading}
             </h3>

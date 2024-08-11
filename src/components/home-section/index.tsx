@@ -6,7 +6,7 @@ import Image from 'next/image';
 const HomeSection = () => {
     return (
         <>
-            <div className="bg-gray-50 h-full overflow-hidden px-5 md:px-10 xl:px-36 pt-48 md:pt-36 pb-40">
+            <div className="bg-gray-50 h-full overflow-hidden px-5 md:px-10 xl:px-36 pt-48 md:pt-32 pb-40">
                 <div className={'relative flex flex-col md:flex-row justify-end items-center w-full h-full'}>
                     <div
                         className={'md:absolute flex flex-col gap-4 p-8 bg-white w-full md:w-[40rem] left-0 self-center rounded-xl borderTopRight z-10'}>

@@ -7,11 +7,11 @@ const StartBgSection = () => {
                 <div className={'flex flex-col justify-center items-center gap-16 z-10'}>
 
                     <div
-                        className={'absolute top-10 md:top-0 left-0 flex flex-col justify-center items-start gap-4 z-10 pt-10 py-4'}>
-                        <h2 className={'font-bold text-white text-2xl md:text-5xl text-center w-[20rem]'}>
+                        className={'absolute top-10 md:top-0 left-5 flex flex-col justify-center items-start gap-0 z-10 pt-10 py-4'}>
+                        <h2 className={'font-bold text-white text-2xl md:text-5xl text-center md:w-[20rem]'}>
                             100+
                         </h2>
-                        <h3 className={'font-bold text-white text-xl md:text-3xl text-center w-[20rem]'}>
+                        <h3 className={'font-bold text-white text-xl md:text-3xl text-center md:w-[20rem]'}>
                             Developers
                         </h3>
                     </div>

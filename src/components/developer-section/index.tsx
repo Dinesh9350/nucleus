@@ -2,7 +2,7 @@ import React from 'react';
 
 const DeveloperSection: React.FC = () => {
     return (
-        <div className="bg-white p-8 rounded-md w-full mx-auto">
+        <div className="bg-white p-8 rounded-lg w-full mx-auto">
             <div className="grid lg:grid-cols-9 gap-8">
                 {/* Role Section */}
                 <div className={'lg:col-span-4'}>
@@ -12,7 +12,7 @@ const DeveloperSection: React.FC = () => {
                         Seniority in development is not just about how much time you have already spent behind the computer screen.
                         It's the way you think, how you approach problems and their solutions, the responsibility you take on and feel.
                     </p>
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <button className="bg-[#44CEF6] text-white font-semibold py-2 px-6 rounded-md">
                             APPLY NOW
                         </button>
