@@ -7,13 +7,13 @@ import Image from "next/image";
 
 const images = [
     '/images/tech/tech1.png',
-    '/images/tech/tech2.png',
     '/images/tech/tech3.png',
     '/images/tech/tech4.png',
+    '/images/tech/tech2.png',
     '/images/tech/tech1.png',
-    '/images/tech/tech2.png',
     '/images/tech/tech3.png',
     '/images/tech/tech4.png',
+    '/images/tech/tech2.png',
 ];
 
 const TechCarousel = () => {
@@ -54,13 +54,13 @@ const TechCarousel = () => {
                         className={'flex justify-center items-center'}
                         sx={{
                             padding: 1,
-                            height: 220, // Set a fixed height to keep images aligned
+                            height: 150, // Set a fixed height to keep images aligned
                         }}
                     >
                         <Image
-                            className={'h-full'} // Ensure image height fills the container
-                            height={200} // Adjust to fit within the container height
-                            width={200}
+                            className={'h-full w-full'} // Ensure image height fills the container
+                            height={150} // Adjust to fit within the container height
+                            width={100}
                             src={src}
                             alt={`Slide ${index}`}
                             style={{ objectFit: 'contain' }} // Ensure image fits without distortion

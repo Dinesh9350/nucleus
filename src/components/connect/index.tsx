@@ -8,7 +8,7 @@ const Connect = () => {
             <div className={'relative flex flex-col md:flex-row justify-start items-center w-full h-full'}>
 
                 <div className={' w-[100%]'}>
-                    <Image className={'hidden sm:block my-auto float-left '} width={750}
+                    <Image className={'hidden md:block my-auto float-left '} width={750}
                            height={200} src={'/images/connect.png'}
                            alt={'home image'}/>
                 </div>

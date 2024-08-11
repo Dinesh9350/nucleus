@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUsSection = () => {
     return (
-        <div className={'relative contactBg w-full h-full py-8 md:py-20'}>
+        <div className={'relative contactBg w-full h-full py-5 md:py-8 lg:py-20'}>
             <div className={'flex flex-col justify-center items-center gap-16 z-10'}>
                 <div className="absolute inset-0 bg-black opacity-50"></div>
 

@@ -10,7 +10,7 @@ const HomeSection = () => {
                 <div className={'relative flex flex-col md:flex-row justify-end items-center w-full h-full'}>
                     <div
                         className={'md:absolute flex flex-col gap-4 p-8 bg-white w-full md:w-[40rem] left-0 self-center rounded-xl borderTopRight z-10'}>
-                        <h3 className={'font-bold text-2xl md:text-5xl'}>
+                        <h3 className={'font-bold text-3xl md:text-5xl'}>
                             Custom Software Solutions for Business Leaders
                         </h3>
                         <p className={'text-lg'}>

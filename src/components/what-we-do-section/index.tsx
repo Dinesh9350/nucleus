@@ -9,7 +9,7 @@ interface WhatWeDoSectionProps {
 const WhatWeDoSection: React.FC<WhatWeDoSectionProps>  = ({heading}) => {
     return (
         <div className={'w-full h-full  '}>
-            <h3 className={'font-bold text-5xl md:text-5xl text-center pt-10 xl:pt-40'}>
+            <h3 className={'font-bold text-3xl md:text-5xl text-center pt-10 xl:pt-40'}>
                 {heading}
             </h3>
             <div className={'flex justify-center relative'}>
