@@ -118,6 +118,7 @@ const ConnectForm = () => {
                                     border: `2px solid ${formik.errors.companyName ? 'red' : '#D3D3D3'}`,
                                     borderRadius: '8px',
                                     height: '2.5rem',
+                                    paddingLeft: '10px'
                                 }}
                             />
                             {formik.errors.companyName && (<span style={{
@@ -140,6 +141,7 @@ const ConnectForm = () => {
                                     border: `2px solid ${formik.errors.name ? 'red' : '#D3D3D3'}`,
                                     borderRadius: '8px',
                                     height: '2.5rem',
+                                    paddingLeft: '10px'
 
                                     // color: '#11192A',
                                     // outlineColor: `${formik.errors.name ? '#ff4d48' : '#11192A'}`
@@ -184,13 +186,14 @@ const ConnectForm = () => {
                                     borderRadius: '8px',
                                     paddingTop: '16px',
                                     paddingBottom: '16px',
-                                    height: '42px'
+                                    height: '42px',
                                 }}
                                 containerStyle={{
                                     // border: `2px solid ${formik.errors.phone ? 'red' : '#D3D3D3'}`,
                                     marginTop: '0.5rem',
                                     width: '100%',
-                                    backgroundColor: '#383c4a !important'
+                                    backgroundColor: '#383c4a !important',
+                                    borderRadius: '1rem',
                                 }}
                             />
 
@@ -215,6 +218,7 @@ const ConnectForm = () => {
                                     border: `2px solid ${formik.errors.email ? 'red' : '#D3D3D3'}`,
                                     borderRadius: '8px',
                                     height: '2.5rem',
+                                    paddingLeft: '10px'
                                 }}
                             />
 
@@ -236,7 +240,7 @@ const ConnectForm = () => {
                             onChange={formik.handleChange}
                             value={formik.values.message}
                             style={{
-                                padding: '4px',
+                                padding: '8px',
                                 height: '4rem',
                                 width: '100%',
                                 border: `2px solid ${formik.errors.message ? 'red' : '#D3D3D3'}`,

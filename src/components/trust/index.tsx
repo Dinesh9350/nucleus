@@ -3,7 +3,7 @@ import React from "react";
 
 const Trust = () => {
     return (
-        <div className={'hidden md:block absolute bottom-[-12%]  px-5 md:px-10 xl:px-36'}>
+        <div className={'hidden xl:block absolute bottom-[-12%]  px-5 md:px-10 xl:px-36'}>
             <div className={'m-auto  bg-white w-full  py-10 rounded-lg px-32 '}>
                 <h3 className={'font-bold text-orange-400 text-3xl md:text-4xl text-center pb-5'}>
                     Amazing clients who trust us

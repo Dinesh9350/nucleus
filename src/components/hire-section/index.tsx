@@ -22,7 +22,7 @@ const HireSection: React.FC<HireSectionProps>  = ({heading, description}) => {
                 <div
                     className='h-[38rem]  w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0'>
                 </div>
-                <div className={'grid sm:grid-cols-4 gap-8 px-5 md:px-36 py-12 md:py-16 z-10'}>
+                <div className={'grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-5 md:px-10 xl:px-36  py-12 md:py-16 z-10'}>
                     {hireData.map((item, index) => (
                         <HireCard key={index} data={item}/>
                     ))}

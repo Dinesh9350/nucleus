@@ -8,6 +8,7 @@ import {
     DialogContent,
     IconButton,
 } from "@mui/material";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -50,14 +51,14 @@ const Navbar = () => {
                     <li>
                         <Link href={'/our-services'}>
                             <p className={pathname === '/our-services' ? 'text-orange-400' : ''}>
-                                Service
+                                Service <KeyboardArrowDownIcon />
                             </p>
                         </Link>
                     </li>
                     <li>
                         <Link href={'/technologies'}>
                             <p className={pathname === '/technologies' ? 'text-orange-400' : ''}>
-                                Technologies
+                                Technologies <KeyboardArrowDownIcon />
                             </p>
                         </Link>
                     </li>
@@ -105,14 +106,14 @@ const Navbar = () => {
                         <li className='py-4 text-center'>
                             <Link href={'/our-services'} onClick={handleClose}>
                                 <p className={pathname === '/our-services' ? 'text-orange-400' : ''}>
-                                    Service
+                                    Service <KeyboardArrowDownIcon />
                                 </p>
                             </Link>
                         </li>
                         <li className='py-4 text-center'>
                             <Link href={'/technologies'} onClick={handleClose}>
                                 <p className={pathname === '/technologies' ? 'text-orange-400' : ''}>
-                                    Technologies
+                                    Technologies <KeyboardArrowDownIcon />
                                 </p>
                             </Link>
                         </li>
